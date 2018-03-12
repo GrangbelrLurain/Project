@@ -29,16 +29,27 @@
         </ul>
       </div>
     </div>
-    <div class="content">
-      <div class="left-menu"><a><span/></a></div>
-      <div class="right-menu"></div>
-      <div id="gallery">
+    <div class="content" id="gallery">
+      <div id="left-menu"></div>
+      <div id="right-menu" onclick="(function(){
+      var x =+ 20;
+      var gallery = document.getElementById('gallery').style;
+      gallery.right = x+'px';
+    })()"></div>
       <div class="gallery">
         <img src="https://i.pinimg.com/564x/12/b3/a3/12b3a305e3c341afe2e3e5e3917b768b.jpg" alt="">
       </div>
       <div class="gallery">
         <img src="https://i.pinimg.com/564x/aa/76/0a/aa760a2b048a033c8174b80200ade7da.jpg" alt="">
       </div>
+      <div class="gallery">
+        <img src="https://i.pinimg.com/564x/aa/76/0a/aa760a2b048a033c8174b80200ade7da.jpg" alt="">
+      </div>
+      <div class="gallery">
+        <img src="https://i.pinimg.com/564x/aa/76/0a/aa760a2b048a033c8174b80200ade7da.jpg" alt="">
+      </div>
+      <div class="gallery">
+        <img src="https://i.pinimg.com/564x/aa/76/0a/aa760a2b048a033c8174b80200ade7da.jpg" alt="">
       </div>
     </div>
     <script src="index.js" charset="utf-8"></script>
