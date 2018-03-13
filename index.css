@@ -18,7 +18,7 @@ ul{margin-left:0;
   padding-left: 20px;}/*메뉴에 적용하기 위한 ul padding*/
 /*헤더*/
 .header {
-    position: absolute;
+    position:fixed;
     height: 30px;
     width: 100%;
     background-color: rgba(30,30,30,0.3);
@@ -58,6 +58,7 @@ div.gallery {
     float: left;
     width:30%;
     min-width: 200px;
+    tarnsition: 2s;
 }
 
 div.gallery:hover {
