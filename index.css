@@ -25,6 +25,7 @@ ul{margin-left:0;
     overflow: hidden;
     -webkit-transition: 1s;
     transition: 1s;
+    z-index: 10;
 }
 .header:hover{
   height: 180px;
@@ -52,37 +53,29 @@ ul{margin-left:0;
     height: 100%;
     background-color: #E8E8E8
   }
-div.gallery {
-    margin: 3px;
-    border: 1px solid #ccc;
-    float: left;
-    width:30%;
-    min-width: 200px;
-    tarnsition: 2s;
+
+div.content img {
+      position: relative;
+      width: 100%;
+      height: auto;
+      transition: 80ms;
 }
 
-div.gallery:hover {
+div.content img:hover {
     border: 1px solid #777;
+    opacity: 0.7;
 }
 
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
 /*이미지 넘기는 매뉴*/
 #left-menu, #right-menu{
-  position: fixed;
+  position: absolute;
   display: block;
   border-right:30px solid transparent; /*border의 성질을 이용해 오른쪽테두리만 투명으로 만든다. */
   border-bottom:30px solid rgba(40,40,40,0.6); /*border를 사용해 두께를 만든다.*/
   -webkit-transition: 1s;
   transition: 1s;
   top:50%;
+  z-index: 10;
 }
 #left-menu:active, #right-menu:active{
   border-bottom:20px solid transparent;
