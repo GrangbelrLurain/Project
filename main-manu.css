@@ -1,0 +1,42 @@
+ul{margin-left:0;
+  padding-left: 20px;}/*메뉴에 적용하기 위한 ul padding*/
+/*헤더*/
+.header {
+    position:fixed;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(30,30,30,0.3);
+    overflow: hidden;
+    -webkit-transition: 1s;
+    transition: 1s;
+    z-index: 10;
+}
+.header:hover{
+  height: 180px;
+  background-color: #444444;
+}
+/*매뉴*/
+.header .menu{
+  position: absolute;
+  margin-top: 7.5px;
+  margin-left: 0;
+}
+.header .menu .menuImg{
+  margin-bottom:3px;
+  margin-left:10%;
+  height: 3px;
+  width: 16px;
+  background-color: white;
+}
+/*메인 메뉴 li*/
+#mainMenu{
+  display:inline-table;
+  margin-top: 25px;
+  margin-left:5%;}
+#mainMenu li{
+  float:left;
+  display: inline;}
+#mainMenu li ul li {
+  position: relative;
+  display:list-item;
+  float: none;}

@@ -3,40 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Portpolio</title>
+    <link rel="stylesheet" href="main-all.css">
+    <link rel="stylesheet" href="main-manu.css">
+    <link rel="stylesheet" href="main-button.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="indexScr.css">
   </head>
   <body>
-    <div class="header">
-      <div class="menu">
-        <div>
-          <div class="menuImg"></div>
-          <div class="menuImg"></div>
-          <div class="menuImg"></div>
-        </div>
-        <ul id="mainMenu">
-          <li>Portpolio
-                <ul>
-                  <li>Photoshop</li>
-                  <li>Ilustrator</li>
-                  <li>Indesign</li>
-                  <li>Photograph</li>
-                  <li>Video</li>
-                </ul>
-          </li>
-          <li>Blog</li>
-          <li>Youtube</li>
-        </ul>
-      </div>
-    </div>
+    <script src="main-manu.js"></script>
+
       <div id="left-menu" onclick='leftButton()'></div>
       <div id="right-menu" onclick='rightButton()'></div>
-    <div class="content" id="gallery">
-      <link rel="text" href="./데이트코스.txt">
-      <img src="http://codex-themes.com/scalia/wp-content/uploads/2015/03/10-scalia-gallery-fullwidth.jpg" alt="">
-      <img src="http://www.wednesdayjournal.net/PEG/14381603616806.jpg" alt="">
-      <img src="http://res.thegear.co.kr/images/20171019/20171019154352463376.jpg" alt="">
-    </div>
+
+    <div class="content" id="gallery"></div>
+
+    <script src="main-imgLoader.js"></script>
     <script src="index.js" charset="utf-8"></script>
   </body>
 </html>

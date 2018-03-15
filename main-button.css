@@ -1,0 +1,31 @@
+/*이미지 넘기는 매뉴*/
+#left-menu, #right-menu{
+  position: absolute;
+  display: block;
+  border-right:30px solid transparent; /*border의 성질을 이용해 오른쪽테두리만 투명으로 만든다. */
+  border-bottom:30px solid rgba(40,40,40,0.6); /*border를 사용해 두께를 만든다.*/
+  -webkit-transition: 1s;
+  transition: 1s;
+  top:50%;
+  z-index: 10;
+}
+#left-menu:active, #right-menu:active{
+  border-bottom:20px solid transparent;
+  border-right:20px solid transparent;
+}
+#left-menu{
+  left:3%;
+  transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  -o-transform:rotate(45deg);
+}
+#right-menu{
+  right:3%;
+  transform:rotate(225deg);
+  -ms-transform:rotate(225deg);
+  -webkit-transform:rotate(225deg);
+  -moz-transform:rotate(225deg);
+  -o-transform:rotate(225deg);
+}
